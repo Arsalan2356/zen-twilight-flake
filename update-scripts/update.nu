@@ -10,8 +10,8 @@ export def generate_sources []: nothing -> record {
   let tag = date now | format date "%Y%m%d"
   let prev_sources: record = open ./sources.json
 
-  let x86_64_url = $"https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.xz"
-  let aarch64_url = $"https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.xz"
+  let x86_64_url = $"https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+  let aarch64_url = $"https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
   let sources = {
 	version: $tag
 	x86_64-linux: {
